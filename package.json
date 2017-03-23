@@ -1,21 +1,12 @@
 {
   "name": "one-dork-syntax",
+  "author": "Kyle Dunovan",
   "theme": "syntax",
   "version": "0.0.0",
   "description": "One Dork syntax theme for Atom (based on One Dark)",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dunovank/one-dork-syntax.git"
-  },
+  "repository": "https://github.com/dunovank/one-dork-syntax",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.0.0 <2.0.0"
-  },
-  "readme": "# Offshoot of Atom's one dark syntax theme.\n\nSee [oceans16-bright](https://github.com/dunovank/oceans16-bright-syntax) and [grade3](https://github.com/dunovank/grade3-syntax) for more Atom themes or go check out my [jupyter-themes](https://github.com/dunovank/jupyter-themes) repository 
-  to use this theme in your Jupyter Notebooks.",
-  "readmeFilename": "README.md",
-  "bugs": {
-    "url": "https://github.com/dunovank/one-dork-syntax/issues"
-  },
-  "homepage": "https://github.com/dunovank/one-dork-syntax"
+    "atom": ">=0.201.0 <2.0.0"
+  }
 }

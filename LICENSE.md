@@ -1,4 +1,4 @@
-Copyright (c) 2015 Kyle Dunovan
+Copyright (c) 2017 Kyle Dunovan
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
