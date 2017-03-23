@@ -11,7 +11,8 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "readme": "# One Dork Syntax Theme\n\ncheck out [oceans16-bright](https://github.com/dunovank/oceans16-bright-syntax) and [grade3](https://github.com/dunovank/grade3-syntax) themes",
+  "readme": "# Offshoot of Atom's one dark syntax theme.\n\nSee [oceans16-bright](https://github.com/dunovank/oceans16-bright-syntax) and [grade3](https://github.com/dunovank/grade3-syntax) for more Atom themes or go check out my [jupyter-themes](https://github.com/dunovank/jupyter-themes) repository 
+  to use this theme in your Jupyter Notebooks.",
   "readmeFilename": "README.md",
   "bugs": {
     "url": "https://github.com/dunovank/one-dork-syntax/issues"
