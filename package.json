@@ -1,0 +1,20 @@
+{
+  "name": "one-dork-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "One Dork dark syntax theme for Atom (based on one-dark syntax)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dunovank/one-dork-syntax.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "readme": "# One Dork Syntax Theme\n\ncheck out [oceans16-bright](https://github.com/dunovank/oceans16-bright-syntax) and [grade3](https://github.com/dunovank/grade3-syntax) themes",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/dunovank/one-dork-syntax/issues"
+  },
+  "homepage": "https://github.com/dunovank/one-dork-syntax"
+}
