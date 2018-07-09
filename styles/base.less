@@ -60,9 +60,11 @@ atom-text-editor {
         font-style: italic;
 }
 .bracket-matcher .region {
-        background: #356cb4;
-        border-bottom: 1px solid #356cb4;
-        opacity: .8;
+        color: white;
+        font-weight: bold;
+        background: #3d91ff;
+        border-bottom: 1px solid #3d91ff;
+        opacity: .95;
 }
 .atom-text-editor .gutter .line-number .icon-right {
         display: none;
@@ -77,7 +79,11 @@ atom-text-editor {
 }
 
 .keyword {
-        color: @purple;
+        color: @red;
+
+        &.other.python {
+            color: @purple;
+        }
         &.control {
                 color: @purple;
         }
@@ -100,6 +106,10 @@ atom-text-editor {
 
 .constant {
         color: @red;
+
+        &.other.property.python {
+                color: @syntax-text-color;
+        }
         &.character.escape {
                 color: @yellow;
         }
@@ -118,13 +128,22 @@ atom-text-editor {
 }
 
 .variable {
-        color: @red;
+        // color: @red;
 
         &.interpolation {
                 color: @red;
         }
         &.parameter.function {
                 color:@syntax-text-color;
+        }
+        &.other.property.python {
+                color: @syntax-text-color;
+        }
+        &.other.object.python {
+                color: @syntax-text-color;
+        }
+        &.language.python {
+                color: @red;
         }
 }
 
@@ -182,8 +201,8 @@ atom-text-editor {
                 color: @yellow;
         }
 
-        &.function  {
-                color: @red;
+        &.function.builtin.python  {
+                color: @yellow;
 
                 &.any-method {
                         color: @red;
@@ -194,11 +213,14 @@ atom-text-editor {
 .storage {
         color: @purple;
 }
+
 .entity {
         &.name.function {
+                color: @syntax-text-color;
+        }
+        &.name.function.python {
                 color: @blue;
         }
-
         &.name.class, &.name.type.class {
                 color: @yellow;
         }
@@ -297,7 +319,7 @@ atom-text-editor {
 
 atom-text-editor .cursor {
         border-left-width: 2px;
-        color: #0095ff;
+        color: #ff9900;
 }
 
 .source.gfm .markup {
