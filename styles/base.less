@@ -62,8 +62,8 @@ atom-text-editor {
 .bracket-matcher .region {
         color: white;
         font-weight: bold;
-        background: #3d91ff;
-        border-bottom: 1px solid #3d91ff;
+        background: @cursor;
+        border-bottom: 1px solid @cursor;
         opacity: .95;
 }
 .atom-text-editor .gutter .line-number .icon-right {
@@ -202,7 +202,7 @@ atom-text-editor {
         }
 
         &.function.builtin.python  {
-                color: @yellow;
+                color: @red;
 
                 &.any-method {
                         color: @red;
@@ -216,7 +216,7 @@ atom-text-editor {
 
 .entity {
         &.name.function {
-                color: @syntax-text-color;
+                color: @blue;
         }
         &.name.function.python {
                 color: @blue;
