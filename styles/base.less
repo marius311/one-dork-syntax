@@ -6,7 +6,7 @@ atom-text-editor {
 }
 atom-text-editor {
         .scroll-view {
-                padding-left: 4px;
+                padding-left: 0px;
         }
         .wrap-guide {
                 background-color: fade(@blue, 8%);
@@ -19,20 +19,17 @@ atom-text-editor {
                 color: fade(@blue, 30%);
         }
         .gutter {
-                background-color: lighten(#252832, 5%);
+                background-color: @syntax-background-color;
                 color: @comment-blue;
-                width:45px;
                 text-align: right;
                 .line-number {
                         padding-right:8px;
-                        width:50px;
+                        width:30px;
                         &.cursor-line {
-                                background-color: fade(#515a6f, 30%);
-                                color: saturate(@green, 5%);
+                                color: darken(#28d2ff, 4%);
                         }
                         &.cursor-line-no-selection {
-                                background-color: fade(#515a6f, 30%);
-                                color: @green;
+                                color: saturate(@green, 25%);
                         }
                 }
         }
@@ -42,7 +39,7 @@ atom-text-editor {
                 color: @orange;
         }
         .invisible {
-                color: fade(#4c5568, 35%);
+                color: fade(#4c5568, 25%);
         }
         .selection .region {
                 background-color: fade(#515a6f, 30%);
