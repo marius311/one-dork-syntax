@@ -19,12 +19,12 @@ atom-text-editor {
                 color: fade(@blue, 30%);
         }
         .gutter {
-                background-color: @syntax-background-color;
+                background-color: darken(@syntax-background-color, 2%);
                 color: @comment-blue;
                 text-align: right;
                 .line-number {
-                        padding-right:8px;
-                        width:30px;
+                        padding-right:18px;
+                        width:40px;
                         &.cursor-line {
                                 color: darken(#28d2ff, 4%);
                         }
