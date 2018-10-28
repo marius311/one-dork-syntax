@@ -19,12 +19,13 @@ atom-text-editor {
                 color: fade(@blue, 30%);
         }
         .gutter {
-                background-color: darken(@syntax-background-color, 2%);
+                background-color: rgba(77,94,117,.07);
                 color: @comment-blue;
                 text-align: right;
                 .line-number {
-                        padding-right:18px;
-                        width:40px;
+                        padding-right: 18px;
+                        padding-left: .5em;
+                        width: 50px;
                         &.cursor-line {
                                 color: darken(#28d2ff, 4%);
                         }
@@ -36,13 +37,13 @@ atom-text-editor {
         .gutter .line-number.folded,
         .gutter .line-number:after,
         .fold-marker:after {
-                color: @orange;
+                color: #ffa04a;
         }
         .invisible {
-                color: fade(#4c5568, 25%);
+                color: fade(#4c5568, 25%)
         }
         .selection .region {
-                background-color: fade(#515a6f, 30%);
+                background-color: fade(#4c5568, 40%);
         }
 }
 .atom-text-editor .search-results .marker .region {
@@ -57,16 +58,16 @@ atom-text-editor {
         font-style: italic;
 }
 .bracket-matcher .region {
-        color: white;
+        color: #fff;
         font-weight: bold;
-        background: @cursor;
-        border-bottom: 1px solid @cursor;
-        opacity: .95;
+        background: darken(@cursor, 4%);
+        border-bottom: 1px solid darken(@cursor, 4%);
+        opacity: .8;
 }
 .atom-text-editor .gutter .line-number .icon-right {
         display: none;
 }
-.entity {
+.syntax--entity {
         &.name.type {
                 color: @yellow;
         }
@@ -75,7 +76,7 @@ atom-text-editor {
         }
 }
 
-.keyword {
+.syntax--keyword {
         color: @red;
 
         &.other.python {
@@ -101,11 +102,11 @@ atom-text-editor {
         }
 }
 
-.constant {
+.syntax--constant {
         color: @red;
 
         &.other.property.python {
-                color: @syntax-text-color;
+                color: @blue;
         }
         &.character.escape {
                 color: @yellow;
@@ -124,8 +125,7 @@ atom-text-editor {
         }
 }
 
-.variable {
-        // color: @red;
+.syntax--variable {
 
         &.interpolation {
                 color: @red;
@@ -134,7 +134,7 @@ atom-text-editor {
                 color:@syntax-text-color;
         }
         &.other.property.python {
-                color: @syntax-text-color;
+                color: @blue;
         }
         &.other.object.python {
                 color: @syntax-text-color;
@@ -149,7 +149,7 @@ atom-text-editor {
         color: @syntax-background-color;
 }
 
-.string {
+.syntax--string {
         color: @green;
         &.regexp {
                 color: @blue;
@@ -162,7 +162,7 @@ atom-text-editor {
         }
 }
 
-.punctuation {
+.syntax--punctuation {
         &.definition {
                 &.comment {
                         color: @comment-blue;
@@ -193,7 +193,7 @@ atom-text-editor {
         }
 }
 
-.support {
+.syntax--support {
         &.class {
                 color: @yellow;
         }
@@ -207,16 +207,19 @@ atom-text-editor {
         }
 }
 
-.storage {
+.syntax--storage {
         color: @purple;
 }
 
-.entity {
+.syntax--entity {
         &.name.function {
                 color: @blue;
         }
+        &.name.function.decorator {
+                color: @cyan;
+        }
         &.name.function.python {
-                color: @blue;
+                color: @yellow;
         }
         &.name.class, &.name.type.class {
                 color: @yellow;
@@ -247,7 +250,7 @@ atom-text-editor {
         }
 }
 
-.meta {
+.syntax--meta {
         &.class {
                 color: @yellow;
         }
@@ -270,11 +273,11 @@ atom-text-editor {
         }
 }
 
-.none {
+.syntax--none {
         color: @syntax-text-color;
 }
 
-.markup {
+.syntax--markup {
         &.bold {
                 color: @orange;
                 font-style: bold;
@@ -319,7 +322,7 @@ atom-text-editor .cursor {
         color: #00abff;
 }
 
-.source.gfm .markup {
+.source.gfm .syntax--markup {
         -webkit-font-smoothing: auto;
         &.heading {
                 color: @green;
