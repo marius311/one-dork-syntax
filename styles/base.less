@@ -25,6 +25,7 @@ atom-text-editor {
                 .line-number {
                         padding-right: 18px;
                         padding-left: .5em;
+                        margin-left: .1em;
                         width: 50px;
                         &.cursor-line {
                                 color: darken(#28d2ff, 4%);
@@ -65,7 +66,10 @@ atom-text-editor {
         opacity: .8;
 }
 .atom-text-editor .gutter .line-number .icon-right {
-        display: none;
+    display: -webkit-inline-box;
+    visibility: hidden;
+    opacity: .6;
+    padding: 0 .5em;
 }
 .syntax--entity {
         &.name.type {
