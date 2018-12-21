@@ -28,7 +28,7 @@ atom-text-editor {
                   margin-left: .1em;
                   width: 50px;
                         &.cursor-line {
-                                color: darken(#28d2ff, 4%);
+                                color: saturate(@green, 25%);
                         }
                         &.cursor-line-no-selection {
                                 color: saturate(@green, 25%);
@@ -202,7 +202,7 @@ atom-text-editor {
                 color: @yellow;
         }
 
-        &.syntax--function.syntax--builtin.syntax--python  {
+        &.syntax--function  {
                 color: @red;
 
                 &.syntax--any-method {
